@@ -10,8 +10,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        satoshi: ["Satoshi", "sans-serif"],
-        inter: ["Inter", "sans-serif"],
+        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
       },
     },
   },
