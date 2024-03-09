@@ -1,11 +1,13 @@
-class ApplicationController < ActionController::Base
+# frozen_string_literal: true
 
+# Application controller
+class ApplicationController < ActionController::Base
   private
 
   def authenticate_user!
-    redirect_to root_path, alert: "You must be logged in!" unless user_signed_in?
+    redirect_to(root_path, alert: "You must be logged in!") unless user_signed_in?
   end
-  
+
   def current_user
     Current.user ||= authenticate_user_from_session
   end
@@ -26,7 +28,7 @@ class ApplicationController < ActionController::Base
     session[:user_id] = user.id
   end
 
-  def logout(user)
+  def logout(_user)
     Current.user = nil
     reset_session
   end
