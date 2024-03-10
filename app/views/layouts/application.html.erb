@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>JobPipeline</title>
+    <title>Job Pipeline | Stay On Top Of Your Job Search</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -10,11 +10,11 @@
     <%= javascript_importmap_tags %>
   </head>
   <body class="flex flex-col h-screen justify-between">
-    <%= render "shared/navbar" %>
-    <main class="pt-24 mb-auto flex w-full flex-col items-center justify-center rounded-lg p-8">
-      <%= render "shared/notices" %>
+    <%= render partial: "shared/navbar" %>
+    <main class="pt-24 mb-auto">
+      <%= render partial: "shared/notices" %>
       <%= yield %>
     </main>
-    <%= render "shared/footer" %>
+    <%= render partial: "shared/footer" %>
   </body>
 </html>

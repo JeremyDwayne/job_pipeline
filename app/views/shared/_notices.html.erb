@@ -1,5 +1,5 @@
-<div id="flash">
+<div id="flash" class="flex w-full flex-col items-center justify-center p-2">
   <% flash.each do |msg_type, message| %>
-    <%= render "shared/flash", locals: { msg_type: msg_type, message: message } %>
+    <%= render partial: "shared/flash", locals: { msg_type: msg_type, message: message } %>
   <% end %>
 </div>

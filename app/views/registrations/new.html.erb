@@ -1,27 +1,79 @@
-<h1>Sign Up</h1>
-
-<%= form_with model: @user, url: registration_path do |form| %>
-  <% if form.object.errors.any? %>
-    <% form.object.errors.full_messages.each do |message| %>
-      <div><%= message %></div>
+<div class="p-8 lg:w-1/2 mx-auto">
+  <div class="bg-gray-100 rounded-b-lg py-12 px-4 lg:px-24">
+    <p class="text-center text-xl text-gray-500">
+    Sign Up
+    </p>
+    <%= form_with model: @user, url: registration_path, class: "mt-6" do |form| %>
+      <% if form.object.errors.any? %>
+        <% form.object.errors.full_messages.each do |message| %>
+          <div class="text-red-500"><%= message %></div>
+        <% end %>
+      <% end %>
+      <div class="relative">
+        <%= form.email_field :email,
+          class: "appearance-none border pl-12 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-full py-3 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline",
+          id: "username",
+          placeholder: "Email"
+        %>
+      <div class="absolute left-0 inset-y-0 flex items-center">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7 ml-3 text-gray-400 p-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            >
+            <path
+                d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"
+                />
+            <path
+                d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"
+                />
+        </svg>
+      </div>
+      </div>
+      <div class="relative mt-3">
+        <%= form.password_field :password,
+          class: "appearance-none border pl-12 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-full py-3 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline",
+          id: "password",
+          placeholder: "Password"
+        %>
+      <div class="absolute left-0 inset-y-0 flex items-center">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7 ml-3 text-gray-400 p-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            >
+            <path
+                d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z"
+                />
+        </svg>
+      </div>
+      </div>
+      <div class="relative mt-3">
+        <%= form.password_field :password_confirmation,
+          class: "appearance-none border pl-12 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-full py-3 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline",
+          id: "password_confirmation",
+          placeholder: "Password Confirmation"
+        %>
+      <div class="absolute left-0 inset-y-0 flex items-center">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-7 w-7 ml-3 text-gray-400 p-1"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+            >
+            <path
+                d="M10 2a5 5 0 00-5 5v2a2 2 0 00-2 2v5a2 2 0 002 2h10a2 2 0 002-2v-5a2 2 0 00-2-2H7V7a3 3 0 015.905-.75 1 1 0 001.937-.5A5.002 5.002 0 0010 2z"
+                />
+        </svg>
+      </div>
+      </div>
+      <div class="flex items-center justify-center mt-8">
+        <%= form.submit "Sign Up",
+          class: "btn-primary"
+        %>
+      </div>
     <% end %>
-  <% end %>
-
-  <div>
-    <%= form.label :email %>
-    <%= form.email_field :email %>
   </div>
-  <div>
-    <%= form.label :password %>
-    <%= form.password_field :password %>
-  </div>
-  <div>
-    <%= form.label :password_confirmation %>
-    <%= form.password_field :password_confirmation %>
-  </div>
-
-  <div>
-    <%= form.submit "Sign Up" %>
-  </div>
-
-<% end %>
+</div>
