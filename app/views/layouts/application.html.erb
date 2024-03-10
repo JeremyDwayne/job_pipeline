@@ -6,27 +6,14 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= stylesheet_link_tag "tailwind", "inter-font", "data-turbo-track": "reload" %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-
-  <body>
-    <div><%= notice %></div>
-    <div><%= alert %></div>
-    <% if user_signed_in? %>
-      <div class="flex flex-col w-1/4">
-        <%= link_to "Edit Password", edit_password_path %>
-        <%= button_to "Log Out", session_path, method: :delete %>
-      </div>
-    <% else %>
-      <div class="flex flex-col w-1/4">
-        <%= link_to "Sign Up", new_registration_path %>
-        <%= link_to "Sign In", new_session_path %>
-      </div>
-    <% end %>
-
-    <main class="container mx-auto mt-28 px-5 flex">
+  <body class="leading-normal tracking-normal">
+    <%= render "shared/navbar" %>
+    <main class="pt-24 flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 p-8">
+      <div><%= notice %></div>
+      <div><%= alert %></div>
       <%= yield %>
     </main>
   </body>

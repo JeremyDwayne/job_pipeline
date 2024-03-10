@@ -1,6 +1,14 @@
 @layer components {
   .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
+    @apply py-2 px-4 bg-blue-200 hover:bg-blue-300;
+    &:hover {
+      text-decoration: none;
+      font-weight: 800;
+    }
+  }
+
+  .btn-main {
+    @apply bg-sky-600 hover:bg-sky-700 px-3 py-2 text-white rounded-lg;
   }
 
   .button-gray {
