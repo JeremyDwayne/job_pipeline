@@ -9,12 +9,12 @@
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
-  <body class="leading-normal tracking-normal">
+  <body class="flex flex-col h-screen justify-between">
     <%= render "shared/navbar" %>
-    <main class="pt-24 flex w-full flex-col items-center justify-center rounded-lg border border-gray-200 p-8">
-      <div><%= notice %></div>
-      <div><%= alert %></div>
+    <main class="pt-24 mb-auto flex w-full flex-col items-center justify-center rounded-lg p-8">
+      <%= render "shared/notices" %>
       <%= yield %>
     </main>
+    <%= render "shared/footer" %>
   </body>
 </html>
