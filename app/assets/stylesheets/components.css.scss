@@ -1,6 +1,6 @@
 @layer components {
   .btn-primary {
-    @apply text-white py-2 px-4 uppercase rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5;
+    @apply text-white py-2 px-4 rounded bg-indigo-500 hover:bg-indigo-600 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5;
   }
 
   .btn-main {
@@ -21,16 +21,14 @@
     -webkit-appearance: none;
     border: 0;
     box-shadow: none;
-    clip-path: polygon(
-      5% 10%,
-      46% 1%,
-      46% 10%,
-      100% 0,
-      95% 90%,
-      31% 100%,
-      31% 90%,
-      0% 100%
-    );
+    clip-path: polygon(5% 10%,
+        46% 1%,
+        46% 10%,
+        100% 0,
+        95% 90%,
+        31% 100%,
+        31% 90%,
+        0% 100%);
 
     &:visited {
       color: #191919;
@@ -41,16 +39,14 @@
       cursor: pointer;
       text-decoration: none;
       font-weight: 800;
-      clip-path: polygon(
-        5% 10%,
-        66% 1%,
-        66% 10%,
-        100% 0,
-        95% 90%,
-        51% 100%,
-        51% 90%,
-        0% 100%
-      );
+      clip-path: polygon(5% 10%,
+          66% 1%,
+          66% 10%,
+          100% 0,
+          95% 90%,
+          51% 100%,
+          51% 90%,
+          0% 100%);
     }
   }
 }

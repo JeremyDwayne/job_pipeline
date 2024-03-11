@@ -63,6 +63,7 @@ group :development do
   gem "rubocop-shopify", require: false
   gem "strong_migrations"
   gem "web-console"
+  gem "erb_lint"
 
   # Add speed badges [https://github.com/MiniProfiler/rack-mini-profiler]
   # gem "rack-mini-profiler"
