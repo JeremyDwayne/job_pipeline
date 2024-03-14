@@ -4,3 +4,16 @@ inherit_gem:
 require:
   - rubocop-rails
   - rubocop-performance
+  - rubocop-rspec
+
+RSpec/ExampleLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Max: 192
+
+Metrics/MethodLength:
+  Max: 14
+
+Metrics/ModuleLength:
+  Max: 138

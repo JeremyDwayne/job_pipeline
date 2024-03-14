@@ -56,6 +56,7 @@ gem "view_component"
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: [:mri, :windows]
+  gem "rspec-rails", "~> 6.1"
 end
 
 group :development do
@@ -63,6 +64,7 @@ group :development do
   gem "rubocop-performance", require: false
   gem "rubocop-rails", require: false
   gem "rubocop-shopify", require: false
+  gem "rubocop-rspec", require: false
   gem "strong_migrations"
   gem "web-console"
   gem "erb_lint"
@@ -78,6 +80,5 @@ group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
   gem "selenium-webdriver"
-  gem "minitest-json-reporter"
   gem "simplecov", require: false
 end
