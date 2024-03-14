@@ -1,24 +1,26 @@
-# README
+# Job Pipeline
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Platform for tracking job applications, interviews, and the contacts at each company. Simplify your job search by keeping track of the data.
 
-Things you may want to cover:
+Features:
 
-* Ruby version
+- Add companies and the info for each point of contact
+  - recruiters, hiring managers, interviewers, etc...
+- Add job applications and track the status
+- Add interviews and track the status
+- Take notes on each company, job, or interview
 
-* System dependencies
+Roadmap:
 
-* Configuration
+- Visual calendar for interviews
+- Availability schedule for interviews?
+- Job board for companies to post jobs
+- AI email generator for following up and thank you notes
 
-* Database creation
+## Stack
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Ruby 3.3
+- Rails 7.1
+- Postgres
+- Redis
+- Sidekiq

@@ -28,4 +28,27 @@
 #       enabled: "ON"
 
 en:
-  hello: "Hello world"
+  email_placeholder: "Email"
+  current_password_placeholder: "Current Password"
+  password_placeholder: "Password"
+  password_confirmation_placeholder: "Password Confirmation"
+  password_mailer:
+    reset_password: "Reset Your Password"
+  password_resets:
+    new:
+      reset_password: "Reset Password"
+    edit:
+      update_password: "Update Password"
+  passwords:
+    edit:
+      update_password: "Update Password"
+  registrations:
+    new:
+      sign_up: "Sign Up"
+  sessions:
+    new:
+      sign_in: "Sign In"
+      forgot_password: "Forgot your password?"
+
+  components:
+    dismiss: "Dismiss hi"

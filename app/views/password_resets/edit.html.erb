@@ -1,7 +1,7 @@
 <div class="p-8 lg:w-1/2 mx-auto">
   <div class="bg-gray-100 rounded-b-lg py-12 px-4 lg:px-24">
     <p class="text-center text-xl text-gray-500">
-    Reset Password
+      <%= t('.reset_password') %>
     </p>
     <%= form_with model: @user, url: password_reset_path(token: params[:token]), class: "mt-6" do |form| %>
       <% if form.object.errors.any? %>
@@ -13,7 +13,7 @@
         <%= form.password_field :password,
           class: "appearance-none border pl-12 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-full py-3 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline",
           id: "password",
-          placeholder: "Password"
+          placeholder: t('password_placeholder')
         %>
       <div class="absolute left-0 inset-y-0 flex items-center">
         <svg
@@ -32,7 +32,7 @@
         <%= form.password_field :password_confirmation,
           class: "appearance-none border pl-12 border-gray-100 shadow-sm focus:shadow-md focus:placeholder-gray-600  transition  rounded-md w-full py-3 text-gray-600 leading-tight focus:outline-none focus:ring-gray-600 focus:shadow-outline",
           id: "password_confirmation",
-          placeholder: "Password Confirmation"
+          placeholder: t('password_confirmation_placeholder')                 
         %>
       <div class="absolute left-0 inset-y-0 flex items-center">
         <svg
@@ -48,7 +48,7 @@
       </div>
       </div>
       <div class="flex items-center justify-center mt-8">
-        <%= form.submit "Reset Your Password",
+        <%= form.submit t('.reset_password'),
           class: "btn-primary"
         %>
       </div>
