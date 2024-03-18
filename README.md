@@ -1,4 +1,6 @@
-# Job Pipeline
+# JobSearch.wtf
+
+_[JobSearch.wtf](https://jobsearch.wtf), because the market is always BS_
 
 A comprehensive platform empowering software engineers to effortlessly manage
 their job search journey. From tracking job applications and interview schedules
