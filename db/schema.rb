@@ -19,7 +19,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_03_14_030133) do
     t.string "url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["name"], name: "index_companies_on_name"
+    t.index ["name"], name: "index_companies_on_name", unique: true
   end
 
   create_table "users", force: :cascade do |t|

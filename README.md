@@ -1,21 +1,12 @@
 # Job Pipeline
 
-Platform for tracking job applications, interviews, and the contacts at each company. Simplify your job search by keeping track of the data.
+A comprehensive platform empowering software engineers to effortlessly manage
+their job search journey. From tracking job applications and interview schedules
+to capturing insightful notes and conducting retrospectives. It streamlines the
+entire process, enabling engineers to navigate their career path with clarity
+and confidence.
 
-Features:
-
-- Add companies and the info for each point of contact
-  - recruiters, hiring managers, interviewers, etc...
-- Add job applications and track the status
-- Add interviews and track the status
-- Take notes on each company, job, or interview
-
-Roadmap:
-
-- Visual calendar for interviews
-- Availability schedule for interviews?
-- Job board for companies to post jobs
-- AI email generator for following up and thank you notes
+Open to ideas for a better name lol.
 
 ## Stack
 
@@ -24,3 +15,9 @@ Roadmap:
 - Postgres
 - Redis
 - Sidekiq
+
+## Roadmap
+
+- Visual calendar for interviews
+- Availability schedule
+- Job board for companies to post jobs
