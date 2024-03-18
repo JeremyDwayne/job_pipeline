@@ -1,0 +1,37 @@
+<div id="<%= dom_id application %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Url:</strong>
+    <%= application.url %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Job title:</strong>
+    <%= application.job_title %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Notes:</strong>
+    <%= application.notes %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Total comp:</strong>
+    <%= application.total_comp %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Company tier:</strong>
+    <%= application.company_tier %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">Company:</strong>
+    <%= application.company_id %>
+  </p>
+
+  <% if action_name != "show" %>
+    <%= link_to "Show this application", application, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to "Edit this application", edit_application_path(application), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <hr class="mt-6">
+  <% end %>
+</div>

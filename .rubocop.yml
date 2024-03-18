@@ -9,6 +9,9 @@ require:
 RSpec/ExampleLength:
   Enabled: false
 
+RSpec/MultipleExpectations:
+  Enabled: false
+
 Metrics/ClassLength:
   Max: 192
 
